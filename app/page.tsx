@@ -54,7 +54,7 @@ export default function HomePage() {
               {/* Захиа - дугтуйн дотроос гарч ирнэ */}
               <div
                 className={`absolute left-1/2 -translate-x-1/2 w-80 bg-white rounded-xl shadow-2xl transition-all duration-1000 ease-out ${isOpen
-                  ? 'top-[-280px] opacity-100 scale-100'
+                  ? 'top-[-240px] opacity-100 scale-100'
                   : 'top-[40px] opacity-0 scale-95'
                   }`}
                 style={{
@@ -67,7 +67,7 @@ export default function HomePage() {
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center gap-3">
                       <Mail className="text-pink-600" size={28} />
-                      <h3 className="text-2xl font-bold text-pink-600">Зөвхөн чамд</h3>
+                      <h3 className="text-2xl font-bold text-pink-600">Зөвхөн чамдаа</h3>
                     </div>
                     <Heart className="text-red-500" size={24} fill="currentColor" />
                   </div>
