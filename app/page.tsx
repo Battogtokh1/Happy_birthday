@@ -210,7 +210,7 @@ export default function HomePage() {
               {/* Захиа - дугтуйн дотроос гарч ирнэ */}
               <div
                 className={`absolute left-1/2 -translate-x-1/2 w-80 bg-white rounded-xl shadow-2xl transition-all duration-1000 ease-out ${isOpen
-                    ? 'top-[-150px] opacity-100 scale-100'
+                    ? 'top-[-240px] opacity-100 scale-100'
                     : 'top-[40px] opacity-0 scale-95'
                   }`}
                 style={{
