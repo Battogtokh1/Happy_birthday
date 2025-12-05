@@ -45,7 +45,7 @@ function HeroSection() {
 
       <div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm">
         <span className="rounded-full border border-pink-400/50 bg-pink-500/10 px-4 py-1">
-          {heroContent.dateLabel}{" "}
+          {/* {heroContent.dateLabel}{" "} */}
           <span className="font-semibold text-pink-200">
             {heroContent.dateValue}
           </span>
