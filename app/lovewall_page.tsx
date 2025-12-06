@@ -221,6 +221,7 @@ function FutureSection() {
         sub="Чамтайгаа хамтдаа би ийм ирээдүйг төсөөлдөг."
       />
 
+
       <div className="grid gap-4 sm:grid-cols-2">
         {futureDreams.map((dream, index) => (
           <div
