@@ -180,6 +180,38 @@ function MemoriesSection() {
   );
 }
 
+// function FutureSection() {
+//   return (
+//     <section id="future" className="space-y-6 pt-12">
+//       <HeaderLabel
+//         label="Ирээдүйн мөрөөдлүүд"
+//         emoji="🌈"
+//         sub="Чамтайгаа хамтдаа би ийм ирээдүйг төсөөлдөг."
+//       />
+
+//       <div className="grid gap-4 sm:grid-cols-2">
+//         {futureDreams.map((dream, index) => (
+//           <div
+//             key={dream.title}
+//             className="group relative overflow-hidden rounded-2xl border border-indigo-400/25 bg-gradient-to-br from-indigo-500/15 via-slate-900/60 to-pink-500/15 p-4 text-left backdrop-blur-xl transition hover:border-indigo-300/70 hover:shadow-[0_0_40px_rgba(129,140,248,0.35)]"
+//           >
+//             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(129,140,248,0.28),_transparent_60%)] opacity-0 transition group-hover:opacity-100" />
+//             <p className="relative text-[11px] font-semibold uppercase tracking-[0.25em] text-indigo-200/90">
+//               Мөрөөдөл
+//             </p>
+//             <h3 className="relative mt-2 text-sm font-semibold text-white sm:text-base">
+//               {dream.title}
+//             </h3>
+//             <p className="relative mt-1 text-xs text-gray-200/90 sm:text-sm">
+//               {dream.text}
+//             </p>
+//           </div>
+//         ))}
+//       </div>
+//     </section>
+//   );
+// }
+
 function FutureSection() {
   return (
     <section id="future" className="space-y-6 pt-12">
@@ -193,11 +225,13 @@ function FutureSection() {
         {futureDreams.map((dream, index) => (
           <div
             key={dream.title}
-            className="group relative overflow-hidden rounded-2xl border border-indigo-400/25 bg-gradient-to-br from-indigo-500/15 via-slate-900/60 to-pink-500/15 p-4 text-left backdrop-blur-xl transition hover:border-indigo-300/70 hover:shadow-[0_0_40px_rgba(129,140,248,0.35)]"
+            className="group relative overflow-hidden rounded-2xl border border-indigo-300/35 bg-gradient-to-br from-indigo-500/15 via-slate-900/60 to-pink-500/15 p-4 text-left backdrop-blur-xl transition hover:border-indigo-300/70 hover:shadow-[0_0_40px_rgba(129,140,248,0.35)] shadow-[0_0_25px_rgba(129,140,248,0.2)]"
           >
-            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(129,140,248,0.28),_transparent_60%)] opacity-0 transition group-hover:opacity-100" />
+            {/* Гэрэлтэх эффект - утсан дээр үргэлж харагдана */}
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(129,140,248,0.28),_transparent_60%)] opacity-60 md:opacity-0 transition md:group-hover:opacity-100" />
+            
             <p className="relative text-[11px] font-semibold uppercase tracking-[0.25em] text-indigo-200/90">
-              Мөрөөдөл #{index + 1}
+              Мөрөөдөл
             </p>
             <h3 className="relative mt-2 text-sm font-semibold text-white sm:text-base">
               {dream.title}
@@ -216,14 +250,14 @@ function FooterSection() {
   return (
     <section className="mt-12 rounded-2xl border border-white/15 bg-white/5 px-4 py-5 text-center text-xs text-gray-200/90 backdrop-blur-xl sm:px-6 sm:text-sm">
       <p className="text-pink-100">
-        Хэрвээ энэ хуудсыг уншиж суугаа бол{" "}
+        {" "}
         <span className="font-semibold text-pink-300">
-          би чамд дахин, дахин хайртай гэж хэлмээр байна 💖
+          Чамдаа би дахин, дахин хайртай гэж хэлмээр байна 💖
         </span>
       </p>
       <p className="mt-2 text-[11px] text-gray-300/80 sm:text-xs">
-        Энэ жижигхэн дижитал хананд бидний дурсамж, хайр, мөрөөдлийн
-        хэсгээс л жаахныг л байрлуулсан. Үлдсэнийг нь бид хамтдаа бичнэ.
+        Энэ жижигхэн хэсэгт бидний дурсамж, хайр, мөрөөдлийн
+        хэсгээс маш жаахан хэсгийг л дурьдсан. Бид хамтдаа цаашид илүү ихийг хамтдаа бүтээж бичих болно.
       </p>
     </section>
   );
