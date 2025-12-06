@@ -153,7 +153,7 @@ function MemoriesSection() {
                 {m.date}
               </p>
               <p className="text-[10px] text-gray-300/90 sm:text-xs">
-                {index + 1}-р дурсамж
+                {/* {index + 1}-р дурсамж */}
               </p>
             </div>
 
