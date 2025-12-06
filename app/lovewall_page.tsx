@@ -34,7 +34,7 @@ function HeroSection() {
   return (
     <section className="space-y-6 text-center">
       <p className="text-xs uppercase tracking-[0.3em] text-pink-300/70">
-        DIGITAL LOVE WALL
+        МЭНДЧИЛГЭЭ
       </p>
       <h1 className="text-balance text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
         {heroContent.title}
@@ -70,6 +70,35 @@ function HeroSection() {
   );
 }
 
+// function ReasonsSection() {
+//   return (
+//     <section id="reasons" className="space-y-6 pt-10">
+//       <HeaderLabel
+//         label="Чамд хайртай 10 шалтгаан"
+//         emoji="❤️"
+//         sub="Эдгээр нь зөвхөн эхний 10 нь шүү."
+//       />
+
+//       <div className="grid gap-4 sm:grid-cols-2">
+//         {reasonsToLove.map((reason) => (
+//           <div
+//             key={reason.title}
+//             className="group relative overflow-hidden rounded-2xl border border-pink-500/20 bg-gradient-to-br from-white/5 via-white/0 to-pink-500/10 p-4 text-left backdrop-blur-md transition hover:border-pink-400/50 hover:shadow-[0_0_40px_rgba(244,114,182,0.25)]"
+//           >
+//             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(248,113,181,0.16),_transparent_60%)] opacity-0 transition group-hover:opacity-100" />
+//             <h3 className="relative text-sm font-semibold text-pink-100 sm:text-base">
+//               {reason.title}
+//             </h3>
+//             <p className="relative mt-2 text-xs text-gray-200/90 sm:text-sm">
+//               {reason.text}
+//             </p>
+//           </div>
+//         ))}
+//       </div>
+//     </section>
+//   );
+// }
+
 function ReasonsSection() {
   return (
     <section id="reasons" className="space-y-6 pt-10">
@@ -83,9 +112,11 @@ function ReasonsSection() {
         {reasonsToLove.map((reason) => (
           <div
             key={reason.title}
-            className="group relative overflow-hidden rounded-2xl border border-pink-500/20 bg-gradient-to-br from-white/5 via-white/0 to-pink-500/10 p-4 text-left backdrop-blur-md transition hover:border-pink-400/50 hover:shadow-[0_0_40px_rgba(244,114,182,0.25)]"
+            className="group relative overflow-hidden rounded-2xl border border-pink-400/30 bg-gradient-to-br from-white/5 via-white/0 to-pink-500/10 p-4 text-left backdrop-blur-md transition hover:border-pink-400/50 hover:shadow-[0_0_40px_rgba(244,114,182,0.25)] shadow-[0_0_25px_rgba(244,114,182,0.15)]"
           >
-            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(248,113,181,0.16),_transparent_60%)] opacity-0 transition group-hover:opacity-100" />
+            {/* Гэрэлтэх эффект - үргэлж харагдана (mobile-д) */}
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(248,113,181,0.16),_transparent_60%)] opacity-60 md:opacity-0 transition md:group-hover:opacity-100" />
+            
             <h3 className="relative text-sm font-semibold text-pink-100 sm:text-base">
               {reason.title}
             </h3>
